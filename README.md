@@ -3,9 +3,11 @@
 <aside>
 💡 파라미터 수 **99.5%감소**, 추론 시간 **93.85% 개선**
 </aside>
-<br>
+
+
 ---
-<br>
+
+
 # 👨‍💻 개요 및 문제점 인식
 
 딥페이크로 인한 **정치적, 사회적 혼란 발생**
@@ -15,26 +17,29 @@
 그 **진위 여부를 정확히 판별**하는 과정이 핵심
 
 - 허위 정보가 확산되기 전에 **신속하게 진위를 판단**하고 차단하는 것이 중요
-<br>
+
+
 ---
-<br>
+
+
 # 💽 데이터셋
 
 META의  [`Deepfake Detection Challenge`](https://www.kaggle.com/c/body-morphometry-kidney-and-tumor) 활용
-<br>
+
+
 ---
-<br>
+
+
 # 🖥️ 개발 및 개선 내용
 
 ### 1. 딥페이크 탐지 SOTA, Cross Efficient ViT 구현
 
 - [Cross Efficient ViT](https://github.com/davide-coccomini/Combining-EfficientNet-and-Vision-Transformers-for-Video-Deepfake-Detection)
 - [Combinint EfficientNet and Vision Transformers for Video Deepfake Detection](https://arxiv.org/abs/2107.02612)
-  <br>
+
+
 ### 2. Knowledge Distillation 기반 모델 경량화
 큰 모델(Teacher Network)로부터 증류한 지식을 작은 모델(Student Network)로 Transfer하는 일련의 과정
-
-  
 
 ```python
 class DistillationLoss(nn.Module):
